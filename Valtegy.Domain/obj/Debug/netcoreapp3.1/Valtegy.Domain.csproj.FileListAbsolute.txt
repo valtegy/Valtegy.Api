@@ -1,0 +1,9 @@
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\bin\Debug\netcoreapp3.1\Valtegy.Domain.deps.json
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\bin\Debug\netcoreapp3.1\Valtegy.Domain.dll
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\bin\Debug\netcoreapp3.1\Valtegy.Domain.pdb
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.AssemblyInfoInputs.cache
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.AssemblyInfo.cs
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.dll
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.pdb
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Domain\obj\Debug\netcoreapp3.1\Valtegy.Domain.csprojAssemblyReference.cache

@@ -19,10 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4A43CD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valtegy.Domain", "Valtegy.Domain\Valtegy.Domain.csproj", "{6D9A113C-7145-488F-ACC7-B5CC8E84912F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{ECB7A7E7-E926-4740-9826-2556C98FC06F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{FE90EC69-7A2C-48A9-A512-3DFE8675E661}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,10 +41,6 @@ Global
 		{6D9A113C-7145-488F-ACC7-B5CC8E84912F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D9A113C-7145-488F-ACC7-B5CC8E84912F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D9A113C-7145-488F-ACC7-B5CC8E84912F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE90EC69-7A2C-48A9-A512-3DFE8675E661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE90EC69-7A2C-48A9-A512-3DFE8675E661}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE90EC69-7A2C-48A9-A512-3DFE8675E661}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE90EC69-7A2C-48A9-A512-3DFE8675E661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,7 +50,6 @@ Global
 		{C79756DD-9A6D-4D16-9EB2-54A0EAF512FB} = {B04ECF07-32C1-4403-86FD-817404E08C6F}
 		{6ED0CB12-D186-4AC5-88B9-A32C5A94AD56} = {7CC4A613-3B1B-4B6B-8AFB-9BDE85679664}
 		{6D9A113C-7145-488F-ACC7-B5CC8E84912F} = {4A43CD2A-D872-4B92-A9F3-C617EE2E8675}
-		{FE90EC69-7A2C-48A9-A512-3DFE8675E661} = {ECB7A7E7-E926-4740-9826-2556C98FC06F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07F25F1F-6F6D-4441-9E16-41F25DAAD555}

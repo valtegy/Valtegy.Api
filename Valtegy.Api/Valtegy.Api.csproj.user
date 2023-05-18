@@ -2,7 +2,8 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ShowAllFiles>false</ShowAllFiles>
-    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <ActiveDebugProfile>Valtegy.Api</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\valtegy.api\Valtegy.Api\Properties\PublishProfiles\valtegy-api-services - Web Deploy1.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

@@ -1,0 +1,15 @@
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Repository.deps.json
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Repository.runtimeconfig.json
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Repository.runtimeconfig.dev.json
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Repository.dll
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Repository.pdb
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Domain.dll
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\bin\Release\netcoreapp3.1\Valtegy.Domain.pdb
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.csprojAssemblyReference.cache
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.AssemblyInfoInputs.cache
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.AssemblyInfo.cs
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.csproj.CoreCompileInputs.cache
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.csproj.CopyComplete
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.dll
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.pdb
+C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Repository\obj\Release\netcoreapp3.1\Valtegy.Repository.genruntimeconfig.cache

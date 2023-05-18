@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VqtLPrhlTSAWsxBqANid6cJbxAAlUvFUobza0e6DNqs=",
+  "Source": "Valtegy.Api",
+  "BasePath": "_content/Valtegy.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

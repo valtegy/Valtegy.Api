@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e/E6UtQ5IL9PEtEF2xld0Ey5F05E/nM7QWyTiwNHy1pdT221r32Iw0Sfuq3/ogiRlCOVE65zU8pGYu9/VgGJig==",
+  "dgSpecHash": "Ism/A3ASuRU4wQGZfFYHoGc2X0fHixDpgUZHsod44C55b0wPHkaAiKe0VwDIv8YFJOmePshmdIuPykXCIXTZrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
+  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a-lender\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\a-lender\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

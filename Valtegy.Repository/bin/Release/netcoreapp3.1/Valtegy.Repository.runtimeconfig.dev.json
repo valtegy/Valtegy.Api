@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\a-lender\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\a-lender\\.nuget\\packages"
+    ]
+  }
+}

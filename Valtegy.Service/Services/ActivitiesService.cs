@@ -43,16 +43,18 @@ namespace Valtegy.Service.Services
 
         public ResponseModel GetActivity()
         {
-            var data = _activityRepository.GetAll();
+            return new ResponseModel(true, "sipasa", new List<CreateActivityViewModel>());
 
-            if (data != null)
-            {
-                return new ResponseModel(true, data.ToList());
-            }
-            else
-            {
-                return new ResponseModel(true, null);
-            }
+            //var data = _activityRepository.GetAll();
+
+            //if (data != null)
+            //{
+            //    return new ResponseModel(true, data.ToList());
+            //}
+            //else
+            //{
+            //    return new ResponseModel(true, null);
+            //}
         }
     }
 }

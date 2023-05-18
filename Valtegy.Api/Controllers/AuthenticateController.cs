@@ -18,13 +18,6 @@ namespace Valtegy.Api.Controllers
             _authenticateService = authenticateService;
         }
 
-        [HttpGet]
-        [Route("{*url}", Order = 999)]
-        public IActionResult Index()
-        {
-            return File("~/wwwroot/index.html", "text/html");
-        }
-
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Login(LoginViewModel login)

@@ -11,7 +11,7 @@ namespace Valtegy.Api.Services
         {
             services.AddScoped<IAuthenticateService, AuthenticateService>();
             services.AddScoped<IUsersService, UsersService>();
-            services.AddScoped<IActivitiesService, ActivitiesService>();
+            //services.AddScoped<IActivitiesService, ActivitiesService>();
         }
     }
 }

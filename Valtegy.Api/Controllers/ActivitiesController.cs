@@ -22,18 +22,13 @@ namespace Valtegy.Api.Controllers
             _activityService = activityService;
         }
 
-        [HttpGet]
-        [Route("{*url}", Order = 999)]
-        public IActionResult Index()
-        {
-            return File("~/wwwroot/index.html", "text/html");
-        }
-
+        [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Create([ModelBinder(typeof(ClientBinder))] UserClaims claims,
+        public async Task<IActionResult> Create(//[ModelBinder(typeof(ClientBinder))] UserClaims claims,
                                    CreateActivityViewModel request)
         {
-            var result = await _activityService.CreateActivity(int.Parse(claims.UserId), request);
+            //var result = await _activityService.CreateActivity(int.Parse(claims.UserId), request);
+            var result = await _activityService.CreateActivity(request);
 
             if (!result.Success)
             {

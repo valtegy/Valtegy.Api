@@ -21,7 +21,7 @@ namespace Valtegy.Service.Services
             _activityRepository = activityRepository;
         }
 
-        public async Task<ResponseModel> CreateActivity(int userId, CreateActivityViewModel activity)
+        public async Task<ResponseModel> CreateActivity(/*int userId, */CreateActivityViewModel activity)
         {
             var entity = new Domain.Entities.Activities
             {
@@ -33,7 +33,8 @@ namespace Valtegy.Service.Services
                 DateUpdated = DateTime.Now,
                 Hours = activity.Hours,
                 Name = activity.Name,
-                StatusActivityId = activity.StatusActivityId
+                StatusActivityId = activity.StatusActivityId,
+                InsertDate = DateTime.Now
             };
 
             var result = await _activityRepository.AddAsync(entity);
@@ -43,18 +44,16 @@ namespace Valtegy.Service.Services
 
         public ResponseModel GetActivity()
         {
-            return new ResponseModel(true, "sipasa", new List<CreateActivityViewModel>());
+            var data = "";// = _activityRepository.GetAll().ToList();
 
-            //var data = _activityRepository.GetAll();
-
-            //if (data != null)
-            //{
-            //    return new ResponseModel(true, data.ToList());
-            //}
-            //else
-            //{
-            //    return new ResponseModel(true, null);
-            //}
+            if (data != null)
+            {
+                return new ResponseModel(true, data);
+            }
+            else
+            {
+                return new ResponseModel(true, null);
+            }
         }
     }
 }

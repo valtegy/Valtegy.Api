@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\Valtegy.Api.csproj": {}
+    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\Valtegy.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\Valtegy.Api.csproj": {
+    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\Valtegy.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\Valtegy.Api.csproj",
+        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\Valtegy.Api.csproj",
         "projectName": "Valtegy.Api",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\Valtegy.Api.csproj",
+        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\Valtegy.Api.csproj",
         "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\obj\\",
+        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj": {
-                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj"
+              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj": {
+                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj"
               },
-              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\Valtegy.Service.csproj": {
-                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\Valtegy.Service.csproj"
+              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {
+                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj"
               }
             }
           }
@@ -102,29 +102,29 @@
         }
       }
     },
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
+    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
         "projectName": "Valtegy.Domain",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj",
+        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
         "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\obj\\",
+        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -135,8 +135,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -171,32 +171,32 @@
         }
       }
     },
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj": {
+    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj",
         "projectName": "Valtegy.Repository",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj",
+        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj",
         "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\obj\\",
+        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
-                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj"
+              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
+                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj"
               }
             }
           }
@@ -208,8 +208,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -250,32 +250,32 @@
         }
       }
     },
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\Valtegy.Service.csproj": {
+    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\Valtegy.Service.csproj",
+        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
         "projectName": "Valtegy.Service",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\Valtegy.Service.csproj",
+        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
         "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Service\\obj\\",
+        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
-                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Domain\\Valtegy.Domain.csproj"
+              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
+                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj"
               }
             }
           }
@@ -287,8 +287,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",

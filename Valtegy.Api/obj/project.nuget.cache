@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6vx3EVj+bpEyEzUmOiF06S3rFh0n6+ui9zTp5VJ5PPxP509sq0NtR4qMbx1c2kU5NWZva1PyBpjqviay47357A==",
+  "dgSpecHash": "ur/DmMjbccbcuPa2+vHyzrtB+siHmbxyd/0HAJD5Hgrgoj2gJgBd8JQLgA1uz4DnR/yRKXBf5POMGRbDqsIr/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Api\\Valtegy.Api.csproj",
+  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Api\\Valtegy.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a-lender\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\a-lender\\.nuget\\packages\\fluentvalidation\\9.1.2\\fluentvalidation.9.1.2.nupkg.sha512",

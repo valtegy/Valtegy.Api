@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Valtegy.Repository.Migrations.UsersDb
+namespace Valtegy.Repository.Migrations
 {
-    public partial class AddAspNetUsersTable : Migration
+    public partial class AddtableUsers : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -205,9 +205,6 @@ namespace Valtegy.Repository.Migrations.UsersDb
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.DropTable(
-            name: "Users");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

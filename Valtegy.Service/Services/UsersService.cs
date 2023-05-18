@@ -33,7 +33,7 @@ namespace Valtegy.Service.Services
 
         public ResponseModel CreateUser(CreateUserViewModel user)
         {
-            var entityUser = _usersRepository.Get().FirstOrDefault(x => x.Email == user.UserName);
+            var entityUser = _usersRepository.GetAll().FirstOrDefault(x => x.Email == user.UserName);
 
             if (entityUser != null)
             {

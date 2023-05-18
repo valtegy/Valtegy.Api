@@ -109,15 +109,15 @@ namespace Valtegy.Repository.Repositories
             return _context.Database.BeginTransaction();
         }
 
-        void IDataRepository<TEntity>.Create(TEntity entity)
-        {
-            throw new NotImplementedException();
-        }
+        //void IDataRepository<TEntity>.Create(TEntity entity)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        void IDataRepository<TEntity>.Delete(object id)
-        {
-            throw new NotImplementedException();
-        }
+        //void IDataRepository<TEntity>.Delete(object id)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         IQueryable<TEntity> IDataRepository<TEntity>.Get()
         {
@@ -129,9 +129,9 @@ namespace Valtegy.Repository.Repositories
             throw new NotImplementedException();
         }
 
-        void IDataRepository<TEntity>.Update(TEntity dbEntity, TEntity model)
-        {
-            throw new NotImplementedException();
-        }
+        //void IDataRepository<TEntity>.Update(TEntity dbEntity, TEntity model)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1W9sbZcw3Mf/BWr56JucUl4MuduGaZfdziHfYT1qVUSlSJRv9IQN+dccgePYGN3IOM6/vmv4cTvkdjThvOQGPg==",
+  "dgSpecHash": "qlTqF4H1U4oQCSKQRSN77Putjx2OVfhoENvaemIB5WUWce/Tp+qsblFZPBf0sWGRfukgU/AplNPx+xCYp2lBPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\valtegy.api\\Valtegy.Repository\\Valtegy.Repository.csproj",
+  "projectFilePath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Repository\\Valtegy.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a-lender\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\a-lender\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

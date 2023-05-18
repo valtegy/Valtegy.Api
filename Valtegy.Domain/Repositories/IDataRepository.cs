@@ -18,10 +18,10 @@ namespace Valtegy.Domain.Repositories
         Task UpdateRangeAsync(List<TEntity> entities);
 
         IDbContextTransaction BeginTransaction();
-        void Create(TEntity entity);
-        void Delete(object id);
+        //Task<TEntity> Create(TEntity entity);
+        //void Delete(object id);
         IQueryable<TEntity> Get();
         TEntity Get(object id);
-        void Update(TEntity dbEntity, TEntity model);
+        //void Update(TEntity dbEntity, TEntity model);
     }
 }

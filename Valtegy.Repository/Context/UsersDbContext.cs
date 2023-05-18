@@ -7,7 +7,7 @@ namespace Valtegy.Repository.Context
 {
     public class UsersDbContext : IdentityDbContext<Domain.Entities.Users, IdentityRole<int>, int>
     {
-        public UsersDbContext(DbContextOptions options) : base(options)
+        public UsersDbContext(DbContextOptions<UsersDbContext> options) : base(options)
         {
         }
     }

@@ -9,7 +9,7 @@ namespace Valtegy.Api.Services
     {
         public static void InjectRepositories(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IDataRepository<Domain.Entities.Activities>, DataRepository<Domain.Entities.Activities>>();
+            //services.AddScoped<IDataRepository<Domain.Entities.Activities>, DataRepository<Domain.Entities.Activities>>();
             services.AddScoped<IDataRepository<Domain.Entities.Users>, UsersRepository>();
             services.AddScoped<IDataRepositoryDapper, DataRepositoryDapper>();
         }

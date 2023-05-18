@@ -1,12 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\UsersDb\20230511190530_RenameUsersTable.cs" />
-    <Compile Remove="Migrations\UsersDb\20230511190530_RenameUsersTable.Designer.cs" />
+    <Compile Remove="Migrations\20230518164208_Test.cs" />
+    <Compile Remove="Migrations\20230518164208_Test.Designer.cs" />
+    <Compile Remove="Migrations\20230518164334_Update.cs" />
+    <Compile Remove="Migrations\20230518164334_Update.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

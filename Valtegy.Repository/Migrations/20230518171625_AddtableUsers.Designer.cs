@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Valtegy.Repository.Context;
 
-namespace Valtegy.Repository.Migrations.UsersDb
+namespace Valtegy.Repository.Migrations
 {
     [DbContext(typeof(UsersDbContext))]
-    [Migration("20230511190738_AddAspNetUsersTable")]
-    partial class AddAspNetUsersTable
+    [Migration("20230518171625_AddtableUsers")]
+    partial class AddtableUsers
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

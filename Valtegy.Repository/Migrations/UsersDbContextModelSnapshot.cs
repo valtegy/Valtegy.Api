@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Valtegy.Repository.Context;
 
-namespace Valtegy.Repository.Migrations.UsersDb
+namespace Valtegy.Repository.Migrations
 {
     [DbContext(typeof(UsersDbContext))]
     partial class UsersDbContextModelSnapshot : ModelSnapshot

@@ -1,11 +1,8 @@
-﻿using Valtegy.Api.Binders;
-using Valtegy.Api.Models;
-using Valtegy.Domain.Helpers;
+﻿using Valtegy.Api.Models;
 using Valtegy.Domain.Services;
 using Valtegy.Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Threading.Tasks;
 
 namespace Valtegy.Api.Controllers
@@ -21,18 +18,11 @@ namespace Valtegy.Api.Controllers
             _usersService = usersService;
         }
 
-        [HttpGet]
-        [Route("{*url}", Order = 999)]
-        public IActionResult Index()
-        {
-            return File("~/wwwroot/index.html", "text/html");
-        }
-
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult Create(CreateUserViewModel request)
+        public async Task<IActionResult> Create(CreateUserViewModel request)
         {
-            var result = _usersService.CreateUser(request);
+            var result = await _usersService.CreateUser(request);
 
             if (!result.Success)
             {
@@ -40,6 +30,20 @@ namespace Valtegy.Api.Controllers
             }
 
             return Created("", result);
+        }
+
+        [HttpPost("requestValidateEmailCode")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RequestValidateEmailCode(RequestValidateEmailCodeViewModel request)
+        {
+            var result = await _usersService.RequestValidateEmailCode(request);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
         }
     }
 }

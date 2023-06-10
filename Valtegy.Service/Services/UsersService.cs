@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using Valtegy.Service.Functions;
 using static System.Net.Mime.MediaTypeNames;
+using System.Threading.Tasks;
 
 namespace Valtegy.Service.Services
 {
@@ -32,13 +33,13 @@ namespace Valtegy.Service.Services
             _configuration = configuration;
         }
 
-        public ResponseModel CreateUser(CreateUserViewModel user)
+        public async Task<ResponseModel> CreateUser(CreateUserViewModel user)
         {
             var entityUser = _usersRepository.Get().FirstOrDefault(x => x.Email == user.UserName);
 
             if (entityUser != null)
             {
-                this.RequestValidateEmailCode(new RequestValidateEmailCodeViewModel { Email = entityUser.Email });
+                await this.RequestValidateEmailCode(new RequestValidateEmailCodeViewModel { Email = entityUser.Email });
 
                 return new ResponseModel(true, entityUser.Id);
             }
@@ -58,7 +59,7 @@ namespace Valtegy.Service.Services
 
                 if (result.Succeeded)
                 {
-                    this.RequestValidateEmailCode(new RequestValidateEmailCodeViewModel { Email = entity.Email });
+                    await this.RequestValidateEmailCode(new RequestValidateEmailCodeViewModel { Email = entity.Email });
 
                     return new ResponseModel(true, entity.Id);
                 }
@@ -73,7 +74,7 @@ namespace Valtegy.Service.Services
             }
         }
         
-        public ResponseModel RequestValidateEmailCode(RequestValidateEmailCodeViewModel data)
+        public async Task<ResponseModel> RequestValidateEmailCode(RequestValidateEmailCodeViewModel data)
         {
             var user = _usersRepository.Get().FirstOrDefault(x => x.Email == data.Email && x.LockoutEnabled == false);
 
@@ -86,8 +87,8 @@ namespace Valtegy.Service.Services
 
                 string pathRoot = Environment.CurrentDirectory;
                 var filePath = Path.Combine(pathRoot, "Templates", "RequestValidateEmailCode.html");
-                string template = System.IO.File.ReadAllText(filePath);
-                var bobyMessage = Functions.UserGeneratorFunction.GetHtml(template.Replace("\r", "").Replace("\n", ""), new { user.ValidateEmailCode });
+                string template = File.ReadAllText(filePath);
+                var bobyMessage = UserGeneratorFunction.GetHtml(template.Replace("\r", "").Replace("\n", ""), new { user.ValidateEmailCode });
 
                 var notification = new CreateNotificationViewModel
                 {
@@ -97,7 +98,7 @@ namespace Valtegy.Service.Services
                     BobyMessage = bobyMessage
                 };
 
-                _notificationService.CreateNotification(null, notification);
+                await _notificationService.CreateNotification(null, notification);
             }
 
             return new ResponseModel(true);

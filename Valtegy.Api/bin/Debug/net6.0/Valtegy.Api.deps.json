@@ -2567,6 +2567,7 @@
       },
       "Valtegy.Service/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.123",
           "Newtonsoft.Json": "13.0.3",
           "System.IdentityModel.Tokens.Jwt": "6.30.1",
           "Valtegy.Domain": "1.0.0"

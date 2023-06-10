@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {}
+    "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
+    "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
         "projectName": "Valtegy.Domain",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
-        "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\obj\\",
+        "projectPath": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj",
+        "packagesPath": "C:\\Users\\alfre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,17 +73,17 @@
         }
       }
     },
-    "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {
+    "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
+        "projectUniqueName": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
         "projectName": "Valtegy.Service",
-        "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
-        "packagesPath": "C:\\Users\\a-lender\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Service\\obj\\",
+        "projectPath": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Service\\Valtegy.Service.csproj",
+        "packagesPath": "C:\\Users\\alfre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\a-lender\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
-                "projectPath": "C:\\Users\\a-lender\\Documents\\Valtegy\\proyecto fuse valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj"
+              "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj": {
+                "projectPath": "C:\\Users\\alfre\\OneDrive\\Fotos\\Documentos\\Valtegy\\Valtegy.Api\\Valtegy.Domain\\Valtegy.Domain.csproj"
               }
             }
           }
@@ -113,6 +113,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

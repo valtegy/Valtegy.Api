@@ -13,3 +13,18 @@ C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Se
 C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\refint\Valtegy.Service.dll
 C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.pdb
 C:\Users\a-lender\Documents\Valtegy\proyecto fuse valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\ref\Valtegy.Service.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.csproj.AssemblyReference.cache
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.AssemblyInfoInputs.cache
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.AssemblyInfo.cs
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.csproj.CoreCompileInputs.cache
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\bin\Debug\net6.0\Valtegy.Service.deps.json
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\bin\Debug\net6.0\Valtegy.Service.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\bin\Debug\net6.0\Valtegy.Service.pdb
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\bin\Debug\net6.0\Valtegy.Domain.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\bin\Debug\net6.0\Valtegy.Domain.pdb
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.csproj.CopyComplete
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\refint\Valtegy.Service.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\Valtegy.Service.pdb
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Service\obj\Debug\net6.0\ref\Valtegy.Service.dll

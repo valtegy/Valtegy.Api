@@ -11,6 +11,7 @@ namespace Valtegy.Api.Services
         {
             //services.AddScoped<IDataRepository<Domain.Entities.Activities>, DataRepository<Domain.Entities.Activities>>();
             services.AddScoped<IDataRepository<Domain.Entities.Users>, UsersRepository>();
+            services.AddScoped<IDataRepository<Domain.Entities.Notification>, DataRepository<Domain.Entities.Notification>>();
             services.AddScoped<IDataRepositoryDapper, DataRepositoryDapper>();
         }
     }

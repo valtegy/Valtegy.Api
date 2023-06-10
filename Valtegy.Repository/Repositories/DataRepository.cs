@@ -129,9 +129,9 @@ namespace Valtegy.Repository.Repositories
             throw new NotImplementedException();
         }
 
-        //void IDataRepository<TEntity>.Update(TEntity dbEntity, TEntity model)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        void IDataRepository<TEntity>.Update(TEntity dbEntity, TEntity model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

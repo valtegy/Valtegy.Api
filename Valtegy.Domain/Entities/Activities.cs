@@ -17,7 +17,6 @@ namespace Valtegy.Domain.Entities
         public string Comments { get; set; }
         public DateTimeOffset InsertDate { get; set; }
         public DateTimeOffset LastUpdate { get; set; }
-        public string Test { get; set; }
 
     }
 }

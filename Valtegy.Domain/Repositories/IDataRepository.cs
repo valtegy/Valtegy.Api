@@ -22,6 +22,6 @@ namespace Valtegy.Domain.Repositories
         //void Delete(object id);
         IQueryable<TEntity> Get();
         TEntity Get(object id);
-        //void Update(TEntity dbEntity, TEntity model);
+        void Update(TEntity dbEntity, TEntity model);
     }
 }

@@ -339,3 +339,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /.vs/Valtegy.Api/v17/.suo
+/.vs/Valtegy.Api/DesignTimeBuild/.dtbcache.v2

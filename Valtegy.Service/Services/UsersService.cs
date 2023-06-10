@@ -72,7 +72,7 @@ namespace Valtegy.Service.Services
                 return new ResponseModel(false, ex.Message);
             }
         }
-
+        y
         public ResponseModel RequestValidateEmailCode(RequestValidateEmailCodeViewModel data)
         {
             var user = _usersRepository.Get().FirstOrDefault(x => x.Email == data.Email && x.LockoutEnabled == false);

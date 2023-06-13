@@ -19,7 +19,7 @@ namespace Valtegy.Domain.Repositories
 
         IDbContextTransaction BeginTransaction();
         //Task<TEntity> Create(TEntity entity);
-        //void Delete(object id);
+        void Delete(object id);
         IQueryable<TEntity> Get();
         TEntity Get(object id);
         void Update(TEntity dbEntity, TEntity model);

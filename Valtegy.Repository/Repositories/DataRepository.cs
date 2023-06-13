@@ -114,10 +114,10 @@ namespace Valtegy.Repository.Repositories
         //    throw new NotImplementedException();
         //}
 
-        //void IDataRepository<TEntity>.Delete(object id)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        void IDataRepository<TEntity>.Delete(object id)
+        {
+            throw new NotImplementedException();
+        }
 
         IQueryable<TEntity> IDataRepository<TEntity>.Get()
         {

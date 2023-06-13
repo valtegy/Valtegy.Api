@@ -1,5 +1,4 @@
-﻿using Valtegy.Domain.Constants;
-using Valtegy.Domain.Models;
+﻿using Valtegy.Domain.Models;
 using Valtegy.Domain.Repositories;
 using Valtegy.Domain.Services;
 using Valtegy.Domain.ViewModels;
@@ -10,7 +9,6 @@ using System;
 using System.IO;
 using System.Linq;
 using Valtegy.Service.Functions;
-using static System.Net.Mime.MediaTypeNames;
 using System.Threading.Tasks;
 
 namespace Valtegy.Service.Services
@@ -36,13 +34,6 @@ namespace Valtegy.Service.Services
         public async Task<ResponseModel> CreateUser(CreateUserViewModel user)
         {
             var entityUser = _usersRepository.Get().FirstOrDefault(x => x.Email == user.UserName);
-
-            if (entityUser != null)
-            {
-                await this.RequestValidateEmailCode(new RequestValidateEmailCodeViewModel { Email = entityUser.Email });
-
-                return new ResponseModel(true, entityUser.Id);
-            }
 
             try
             {
@@ -102,6 +93,27 @@ namespace Valtegy.Service.Services
             }
 
             return new ResponseModel(true);
+        }
+
+        private ResponseModel DeleteUser(int id)
+        {
+            _usersRepository.Delete(id);
+
+            return new ResponseModel(true, id);
+        }
+
+        public bool ExistsUserName(string userName)
+        {
+            var entityUser = _usersRepository.Get().FirstOrDefault(x => x.UserName.ToLower() == userName.ToLower());
+
+            if (entityUser != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using Valtegy.Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Valtegy.Service.Services;
 
 namespace Valtegy.Api.Controllers
 {
@@ -37,6 +38,20 @@ namespace Valtegy.Api.Controllers
         public async Task<IActionResult> RequestValidateEmailCode(RequestValidateEmailCodeViewModel request)
         {
             var result = await _usersService.RequestValidateEmailCode(request);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
+
+        [HttpPost("validateEmailCode")]
+        [AllowAnonymous]
+        public IActionResult ValidateEmailCode(RequestValidateEmailCodeViewModel request)
+        {
+            var result = _usersService.ValidateEmailCode(request);
 
             if (!result.Success)
             {

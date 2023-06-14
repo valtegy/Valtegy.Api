@@ -115,5 +115,26 @@ namespace Valtegy.Service.Services
                 return false;
             }
         }
+
+        public ResponseModel ValidateEmailCode(RequestValidateEmailCodeViewModel data)
+        {
+            var user = _usersRepository.Get().FirstOrDefault(x => x.Email == data.Email
+                                                            && x.ValidateEmailCode != null
+                                                            && x.ValidateEmailCode == data.Code
+                                                            && x.LockoutEnabled == false);
+
+            if (user != null)
+            {
+                var entityUser = user;
+                user.ValidateEmailCode = null;
+                user.EmailConfirmed = true;
+
+                _usersRepository.Update(entityUser, user);
+
+                return new ResponseModel(true);
+            }
+
+            return new ResponseModel(false, "Validación no exitosa.");
+        }
     }
 }

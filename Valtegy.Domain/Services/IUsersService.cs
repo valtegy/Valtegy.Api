@@ -9,5 +9,6 @@ namespace Valtegy.Domain.Services
         Task<ResponseModel> CreateUser(CreateUserViewModel user);
         Task<ResponseModel> RequestValidateEmailCode(RequestValidateEmailCodeViewModel data);
         bool ExistsUserName(string userName);
+        ResponseModel ValidateEmailCode(RequestValidateEmailCodeViewModel data);
     }
 }

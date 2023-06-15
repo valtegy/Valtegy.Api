@@ -292,10 +292,10 @@ C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Deb
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.AssemblyInfo.cs
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.csproj.CoreCompileInputs.cache
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\appsettings.json
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Templates\RequestValidateEmailCode.html
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Valtegy.Api.exe
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Valtegy.Api.deps.json
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Valtegy.Api.runtimeconfig.json
@@ -574,4 +574,3 @@ C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Deb
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.pdb
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.genruntimeconfig.cache
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\ref\Valtegy.Api.dll
-C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Templates\RequestValidateEmailCode.html

@@ -12,8 +12,8 @@ using Valtegy.Repository.Context;
 namespace Valtegy.Repository.Migrations.ValtegyDb
 {
     [DbContext(typeof(ValtegyDbContext))]
-    [Migration("20230609231344_AddNotificationsTable")]
-    partial class AddNotificationsTable
+    [Migration("20230615000321_AddTables")]
+    partial class AddTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,11 +26,9 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
 
             modelBuilder.Entity("Valtegy.Domain.Entities.Activities", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTimeOffset>("ActivityDate")
                         .HasColumnType("datetimeoffset");

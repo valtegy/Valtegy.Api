@@ -95,7 +95,7 @@ namespace Valtegy.Service.Services
             return new ResponseModel(true);
         }
 
-        private ResponseModel DeleteUser(int id)
+        public ResponseModel DeleteUser(int id)
         {
             _usersRepository.Delete(id);
 

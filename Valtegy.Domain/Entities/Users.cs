@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Valtegy.Domain.Entities
 {
-    public class Users : IdentityUser<int>
+    public class Users : IdentityUser<Guid>
     {
         [MaxLength(100)]
         [Required]

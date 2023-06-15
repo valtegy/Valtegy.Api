@@ -10,5 +10,6 @@ namespace Valtegy.Domain.Services
         Task<ResponseModel> RequestValidateEmailCode(RequestValidateEmailCodeViewModel data);
         bool ExistsUserName(string userName);
         ResponseModel ValidateEmailCode(RequestValidateEmailCodeViewModel data);
+        ResponseModel DeleteUser(int id);
     }
 }

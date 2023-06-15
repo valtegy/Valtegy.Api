@@ -47,7 +47,7 @@ namespace Valtegy.Service.Services
             try
             {
                 client.Send(message);
-                return new ResponseModel(true, null);
+                return new ResponseModel(true);
             }
             catch (Exception ex)
             {

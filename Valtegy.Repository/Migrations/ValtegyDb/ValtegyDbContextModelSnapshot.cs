@@ -24,11 +24,9 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
 
             modelBuilder.Entity("Valtegy.Domain.Entities.Activities", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTimeOffset>("ActivityDate")
                         .HasColumnType("datetimeoffset");

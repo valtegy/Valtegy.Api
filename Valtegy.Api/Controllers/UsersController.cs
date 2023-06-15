@@ -78,7 +78,7 @@ namespace Valtegy.Api.Controllers
             return Ok(new Response200Ok(result.Data));
         }
 
-        [HttpPost("completeaccount/{email}")]
+        [HttpPost("completeAccount/{email}")]
         [AllowAnonymous]
         public async Task<IActionResult> CompleteAccount(string email, CompleteAccountViewModel request)
         {

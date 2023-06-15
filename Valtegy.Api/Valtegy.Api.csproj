@@ -30,4 +30,8 @@
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</Content>
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\CompleteAccount.html" />
+  </ItemGroup>
 </Project>

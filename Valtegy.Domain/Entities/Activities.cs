@@ -7,7 +7,7 @@ namespace Valtegy.Domain.Entities
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public DateTimeOffset ActivityDate { get; set; }
         public string Name { get; set; }
         public int ActivityTypeId { get; set; }

@@ -60,5 +60,19 @@ namespace Valtegy.Api.Controllers
 
             return Ok(new Response200Ok(result.Data));
         }
+
+        [HttpPost("deleteUser/{idUser}")]
+        [AllowAnonymous]
+        public IActionResult DeleteUser(int idUser)
+        {
+            var result = _usersService.DeleteUser(idUser);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
     }
 }

@@ -5,7 +5,7 @@ using System;
 
 namespace Valtegy.Repository.Context
 {
-    public class UsersDbContext : IdentityDbContext<Domain.Entities.Users, IdentityRole<int>, int>
+    public class UsersDbContext : IdentityDbContext<Domain.Entities.Users, IdentityRole<Guid>, Guid>
     {
         public UsersDbContext(DbContextOptions<UsersDbContext> options) : base(options)
         {

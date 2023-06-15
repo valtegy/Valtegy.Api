@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Valtegy.Repository.Migrations.ValtegyDb
 {
-    public partial class AddNotificationsTable : Migration
+    public partial class AddTables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,7 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
                 name: "Activities",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ActivityDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ActivityTypeId = table.Column<int>(type: "int", nullable: false),

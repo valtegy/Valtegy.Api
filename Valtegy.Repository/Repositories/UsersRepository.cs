@@ -25,7 +25,7 @@ namespace Valtegy.Repository.Repositories
 
         public void Delete(object id)
         {
-            var entity = _dbContext.Users.FirstOrDefault(x => x.Id == (int)id);
+            var entity = _dbContext.Users.FirstOrDefault(x => x.Id == (Guid)id);
             entity.LockoutEnabled = true;
             entity.LockoutEnd = DateTimeOffset.Now;
             _dbContext.SaveChanges();
@@ -38,7 +38,7 @@ namespace Valtegy.Repository.Repositories
 
         public Domain.Entities.Users Get(object id)
         {
-            return _dbContext.Users.FirstOrDefault(x => x.Id == (int)id);
+            return _dbContext.Users.FirstOrDefault(x => x.Id == (Guid)id);
         }
 
         public void Update(Domain.Entities.Users dbEntity, Domain.Entities.Users model)

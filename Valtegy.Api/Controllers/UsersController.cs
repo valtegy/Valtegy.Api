@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Valtegy.Service.Services;
+using Valtegy.Api.Binders;
+using Valtegy.Domain.Helpers;
+using System;
 
 namespace Valtegy.Api.Controllers
 {
@@ -63,9 +66,23 @@ namespace Valtegy.Api.Controllers
 
         [HttpPost("deleteUser/{idUser}")]
         [AllowAnonymous]
-        public IActionResult DeleteUser(int idUser)
+        public IActionResult DeleteUser(Guid userId)
         {
-            var result = _usersService.DeleteUser(idUser);
+            var result = _usersService.DeleteUser(userId);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
+
+        [HttpPost("completeaccount/{email}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> CompleteAccount(string email, CompleteAccountViewModel request)
+        {
+            var result = await _usersService.CompleteAccount(email, request);
 
             if (!result.Success)
             {

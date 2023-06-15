@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using Valtegy.Service.Functions;
 using System.Threading.Tasks;
+using Valtegy.Domain.Constants;
 
 namespace Valtegy.Service.Services
 {
@@ -95,11 +96,11 @@ namespace Valtegy.Service.Services
             return new ResponseModel(true);
         }
 
-        public ResponseModel DeleteUser(int id)
+        public ResponseModel DeleteUser(Guid userId)
         {
-            _usersRepository.Delete(id);
+            _usersRepository.Delete(userId);
 
-            return new ResponseModel(true, id);
+            return new ResponseModel(true, userId);
         }
 
         public bool ExistsUserName(string userName)
@@ -135,6 +136,40 @@ namespace Valtegy.Service.Services
             }
 
             return new ResponseModel(false, "Validación no exitosa.");
+        }
+        public async Task<ResponseModel> CompleteAccount(string email, CompleteAccountViewModel user)
+        {
+            var entity = _usersRepository.Get().FirstOrDefault(x => x.UserName.ToLower().Trim() == email.ToLower().Trim()) ?? throw new Exception(ErrorMessage.Repository.RecordNotFound);
+            var model = entity;
+
+            model.FirstName = user.FirstName;
+            model.MiddleName = user.MiddleName;
+            model.LastName1 = user.LastName1;
+            model.LastName2 = user.LastName2;
+            model.BirthdayDate = user.BirthdayDate;
+
+            _usersRepository.Update(entity, model);
+
+            string pathRoot = Environment.CurrentDirectory;
+            var filePath = Path.Combine(pathRoot, "Templates", "CompleteAccount.html");
+            string template = File.ReadAllText(filePath);
+
+            var notification = new CreateNotificationViewModel
+            {
+                To = entity.Email,
+                Subject = "Validación de cuenta valtegy",
+                IsBodyHtml = true,
+                BobyMessage = UserGeneratorFunction.GetHtml(template.Replace("\r", "").Replace("\n", ""),
+                new
+                {
+                    firstName = entity.FirstName,
+                    lastName1 = entity.LastName1
+                })
+            };
+
+            await _notificationService.CreateNotification(entity.Id, notification);
+
+            return new ResponseModel(true, entity.Id);
         }
     }
 }

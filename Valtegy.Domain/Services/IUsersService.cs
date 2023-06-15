@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Valtegy.Domain.Entities;
 using Valtegy.Domain.Models;
 using Valtegy.Domain.ViewModels;
 
@@ -11,6 +12,7 @@ namespace Valtegy.Domain.Services
         Task<ResponseModel> RequestValidateEmailCode(RequestValidateEmailCodeViewModel data);
         bool ExistsUserName(string userName);
         ResponseModel ValidateEmailCode(RequestValidateEmailCodeViewModel data);
-        ResponseModel DeleteUser(int id);
+        ResponseModel DeleteUser(Guid userId);
+        Task<ResponseModel> CompleteAccount(string email, CompleteAccountViewModel user);
     }
 }

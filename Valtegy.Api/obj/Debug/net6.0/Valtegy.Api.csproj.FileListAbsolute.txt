@@ -574,3 +574,5 @@ C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Deb
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.pdb
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.genruntimeconfig.cache
 C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\ref\Valtegy.Api.dll
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\bin\Debug\net6.0\Templates\CompleteAccount.html
+C:\Users\alfre\OneDrive\Fotos\Documentos\Valtegy\Valtegy.Api\Valtegy.Api\obj\Debug\net6.0\Valtegy.Api.MvcApplicationPartsAssemblyInfo.cs

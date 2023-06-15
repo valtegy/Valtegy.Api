@@ -89,7 +89,7 @@ namespace Valtegy.Service.Services
                     BobyMessage = bobyMessage
                 };
 
-                await _notificationService.CreateNotification(null, notification);
+                await _notificationService.CreateNotification(user.Id, notification);
             }
 
             return new ResponseModel(true);

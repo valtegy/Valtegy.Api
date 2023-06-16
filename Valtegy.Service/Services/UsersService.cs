@@ -121,7 +121,7 @@ namespace Valtegy.Service.Services
         {
             var user = _usersRepository.Get().FirstOrDefault(x => x.Email == data.Email
                                                             && x.ValidateEmailCode != null
-                                                            && x.ValidateEmailCode == data.Code
+                                                            && x.ValidateEmailCode == data.Code.ToString()
                                                             && x.LockoutEnabled == false);
 
             if (user != null)

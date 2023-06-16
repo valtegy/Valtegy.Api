@@ -3,6 +3,6 @@
     public class RequestValidateEmailCodeViewModel
     {
         public string Email { get; set; }
-        public string Code { get; set; }
+        public int Code { get; set; }
     }
 }

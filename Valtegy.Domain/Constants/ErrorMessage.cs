@@ -17,6 +17,7 @@ namespace Valtegy.Domain.Constants
         public class InputUser
         {
             public const string RequiredField = "Éste campo es requerido.";
+            public const string BadUserName = "El usuario debe tener formato de correo electronico.";
             public const string MaxLength100PeopleName = "El nombre sobrepasa los 100 caracteres.";
             public const string MaxLength100PeopleLastName = "Los apellidos sobrepasan los 100 caracteres.";
             public const string DuplicateUserName = "El usuario '{0}' ya está elegido.";

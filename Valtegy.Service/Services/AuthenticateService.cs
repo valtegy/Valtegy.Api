@@ -43,34 +43,21 @@ namespace Valtegy.Service.Services
         {
             try
             {
-                var user = _userRepository
-                    .Get()
-                    .FirstOrDefault(x => x.UserName == login.User && x.LockoutEnabled == false);
-
-                // login with phoneNumber
-                if (user == null)
-                {
-                    user = _userRepository
-                    .Get()
-                    .FirstOrDefault(x => x.PhoneNumber == login.User && x.PhoneNumberConfirmed == true && x.LockoutEnabled == false);
-                }
+                var user = _userRepository.Get().FirstOrDefault(x => x.UserName == login.Email && x.LockoutEnabled == false);
 
                 if (user != null)
                 {
+                    if (!user.EmailConfirmed)
+                    {
+                        return new ResponseModel(true, new { user.Email, user.EmailConfirmed });
+                    }
+
                     var result = _signInManager.CheckPasswordSignInAsync(user,
                                login.Password, lockoutOnFailure: true).GetAwaiter().GetResult();
 
                     if (result.Succeeded)
                     {
-                        string token = "";
-                        if (user.EmailConfirmed)
-                        {
-                            token = GenerateJwtToken(user); 
-                        }
-                        
-                        var authenticateDTO = new AuthenticateDTO(user, token);
-
-                        return new ResponseModel(true, authenticateDTO);
+                        return new ResponseModel(true, new AuthenticateDTO(user, GenerateJwtToken(user)));
                     }
                 }
 

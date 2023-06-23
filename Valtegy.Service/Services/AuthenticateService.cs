@@ -52,7 +52,7 @@ namespace Valtegy.Service.Services
                         return new ResponseModel(true, new { user.Email, user.EmailConfirmed });
                     }
 
-                    if (!user.EmailConfirmed)
+                    if (!user.IsEnabled)
                     {
                         return new ResponseModel(true, new { user.Email, user.IsEnabled });
                     }

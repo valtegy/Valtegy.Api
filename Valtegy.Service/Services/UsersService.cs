@@ -147,6 +147,7 @@ namespace Valtegy.Service.Services
             model.LastName1 = user.LastName1;
             model.LastName2 = user.LastName2;
             model.BirthdayDate = user.BirthdayDate;
+            model.IsEnabled = true;
 
             _usersRepository.Update(entity, model);
 

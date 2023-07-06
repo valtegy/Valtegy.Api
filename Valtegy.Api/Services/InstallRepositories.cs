@@ -9,9 +9,11 @@ namespace Valtegy.Api.Services
     {
         public static void InjectRepositories(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddScoped<IDataRepository<Domain.Entities.Activities>, DataRepository<Domain.Entities.Activities>>();
+            services.AddScoped<IDataRepository<Domain.Entities.Activities>, DataRepository<Domain.Entities.Activities>>();
             services.AddScoped<IDataRepository<Domain.Entities.Users>, UsersRepository>();
             services.AddScoped<IDataRepository<Domain.Entities.Notification>, DataRepository<Domain.Entities.Notification>>();
+            services.AddScoped<IDataRepository<Domain.Entities.ActivityType>, DataRepository<Domain.Entities.ActivityType>>();
+            services.AddScoped<IDataRepository<Domain.Entities.StatusActivity>, DataRepository<Domain.Entities.StatusActivity>>();
             services.AddScoped<IDataRepositoryDapper, DataRepositoryDapper>();
         }
     }

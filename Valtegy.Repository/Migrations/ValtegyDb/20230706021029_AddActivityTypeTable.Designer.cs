@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Valtegy.Repository.Context;
 
@@ -11,9 +12,10 @@ using Valtegy.Repository.Context;
 namespace Valtegy.Repository.Migrations.ValtegyDb
 {
     [DbContext(typeof(ValtegyDbContext))]
-    partial class ValtegyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230706021029_AddActivityTypeTable")]
+    partial class AddActivityTypeTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,8 +30,8 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("ActivityDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTimeOffset>("ActivityDate")
+                        .HasColumnType("datetimeoffset");
 
                     b.Property<int>("ActivityNumber")
                         .HasColumnType("int");
@@ -46,8 +48,8 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
                     b.Property<DateTimeOffset?>("DateUpdated")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("Hours")
-                        .HasColumnType("int");
+                    b.Property<double>("Hours")
+                        .HasColumnType("float");
 
                     b.Property<DateTimeOffset>("InsertDate")
                         .HasColumnType("datetimeoffset");
@@ -57,9 +59,6 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
 
                     b.Property<DateTimeOffset>("LastUpdate")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<int>("Minutes")
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -163,31 +162,6 @@ namespace Valtegy.Repository.Migrations.ValtegyDb
                     b.HasKey("Id");
 
                     b.ToTable("Notifications");
-                });
-
-            modelBuilder.Entity("Valtegy.Domain.Entities.StatusActivity", b =>
-                {
-                    b.Property<int>("StatusActivityId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatusActivityId"), 1L, 1);
-
-                    b.Property<bool>("Active")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("StatusActivityId");
-
-                    b.ToTable("StatusActivity");
                 });
 #pragma warning restore 612, 618
         }

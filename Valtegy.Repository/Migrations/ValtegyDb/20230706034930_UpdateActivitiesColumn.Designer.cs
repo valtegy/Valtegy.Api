@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Valtegy.Repository.Context;
 
@@ -11,9 +12,10 @@ using Valtegy.Repository.Context;
 namespace Valtegy.Repository.Migrations.ValtegyDb
 {
     [DbContext(typeof(ValtegyDbContext))]
-    partial class ValtegyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230706034930_UpdateActivitiesColumn")]
+    partial class UpdateActivitiesColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

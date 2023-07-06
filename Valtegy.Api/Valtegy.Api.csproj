@@ -33,5 +33,7 @@
 
   <ItemGroup>
     <None Remove="Templates\CompleteAccount.html" />
+    <None Remove="Templates\ForgotPassword.html" />
+    <None Remove="Templates\RequestConfirmChangePassword.html" />
   </ItemGroup>
 </Project>

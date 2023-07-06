@@ -8,6 +8,7 @@ using Valtegy.Service.Services;
 using Valtegy.Api.Binders;
 using Valtegy.Domain.Helpers;
 using System;
+using Alender.User.Domain.ViewModels;
 
 namespace Valtegy.Api.Controllers
 {
@@ -83,6 +84,48 @@ namespace Valtegy.Api.Controllers
         public async Task<IActionResult> CompleteAccount(string email, CompleteAccountViewModel request)
         {
             var result = await _usersService.CompleteAccount(email, request);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
+
+        [AllowAnonymous]
+        [HttpPost("forgotpassword/{email}")]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            var result = await _usersService.ForgotPassword(email);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
+
+        [AllowAnonymous]
+        [HttpPost("resetpassword")]
+        public async Task<IActionResult> SetPassword(ResetPasswordViewModel request)
+        {
+            var result = await _usersService.ResetPassword(request);
+
+            if (!result.Success)
+            {
+                return Conflict(new Response409Conflict(result.Message));
+            }
+
+            return Ok(new Response200Ok(result.Data));
+        }
+
+        [AllowAnonymous]
+        [HttpPost("requestForgotPassword/{email}")]
+        public async Task<IActionResult> RequestForgotPassword(string email)
+        {
+            var result = await _usersService.RequestForgotPassword(email);
 
             if (!result.Success)
             {

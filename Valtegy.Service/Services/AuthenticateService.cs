@@ -54,7 +54,7 @@ namespace Valtegy.Service.Services
 
                     if (!user.IsEnabled)
                     {
-                        return new ResponseModel(true, new { user.Email, user.IsEnabled });
+                        return new ResponseModel(true, new { user.Email, user.EmailConfirmed, user.IsEnabled });
                     }
 
                     var result = _signInManager.CheckPasswordSignInAsync(user,
@@ -80,12 +80,6 @@ namespace Valtegy.Service.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
 
-            List<string> roles = new List<string>()
-            {
-                "lender",
-                "borrower"
-            };
-
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -96,7 +90,9 @@ namespace Valtegy.Service.Services
                 Expires = DateTime.UtcNow.AddMinutes(expiresTokenMinutes),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
+
             return tokenHandler.WriteToken(token);
         }
     }

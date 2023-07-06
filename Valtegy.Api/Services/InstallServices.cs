@@ -13,7 +13,7 @@ namespace Valtegy.Api.Services
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IEmailService, EmailService>();
-            //services.AddScoped<IActivitiesService, ActivitiesService>();
+            services.AddScoped<IActivitiesService, ActivitiesService>();
         }
     }
 }

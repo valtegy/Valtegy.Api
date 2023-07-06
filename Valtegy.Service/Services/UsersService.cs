@@ -11,6 +11,10 @@ using System.Linq;
 using Valtegy.Service.Functions;
 using System.Threading.Tasks;
 using Valtegy.Domain.Constants;
+using static Dapper.SqlMapper;
+using Newtonsoft.Json.Linq;
+using System.Runtime.Intrinsics.Arm;
+using Alender.User.Domain.ViewModels;
 
 namespace Valtegy.Service.Services
 {
@@ -139,7 +143,13 @@ namespace Valtegy.Service.Services
         }
         public async Task<ResponseModel> CompleteAccount(string email, CompleteAccountViewModel user)
         {
-            var entity = _usersRepository.Get().FirstOrDefault(x => x.UserName.ToLower().Trim() == email.ToLower().Trim()) ?? throw new Exception(ErrorMessage.Repository.RecordNotFound);
+            var entity = _usersRepository.Get().FirstOrDefault(x => x.UserName.ToLower().Trim() == email.ToLower().Trim());
+
+            if (entity == null)
+            {
+                return new ResponseModel(false, ErrorMessage.Repository.RecordNotFound);
+            }
+
             var model = entity;
 
             model.FirstName = user.FirstName;
@@ -171,6 +181,85 @@ namespace Valtegy.Service.Services
             await _notificationService.CreateNotification(entity.Id, notification);
 
             return new ResponseModel(true, entity.Id);
+        }
+
+        public async Task<ResponseModel> ForgotPassword(string email)
+        {
+            var user = await _usersManager.FindByEmailAsync(email);
+
+            if (user != null)
+            {
+                string urlBase = _configuration.GetSection("ForgotPassword")["UrlBase"].ToString();
+                var token = await _usersManager.GeneratePasswordResetTokenAsync(user);
+                string pathRoot = Environment.CurrentDirectory;
+                var filePath = Path.Combine(pathRoot, "Templates", "ForgotPassword.html");
+                string template = File.ReadAllText(filePath);
+
+                var notification = new CreateNotificationViewModel
+                {
+                    To = user.Email,
+                    Subject = "Restablecer contraseña valtegy",
+                    IsBodyHtml = true,
+                    BobyMessage = UserGeneratorFunction.GetHtml(template.Replace("\r", "").Replace("\n", ""),
+                    new
+                    {
+                        HrefLink = "href=" + "\"" + urlBase + "/restablecer-contraseña/" + email + "/" + System.Net.WebUtility.UrlEncode(token) + "/\""
+                    })
+                };
+
+                await _notificationService.CreateNotification(user.Id, notification);
+
+                return new ResponseModel(true, data: null);
+            }
+
+            return new ResponseModel(false, "No se encontró el registro de usuario.");
+        }
+
+        public async Task<ResponseModel> RequestForgotPassword(string email)
+        {
+            var user = await _usersManager.FindByEmailAsync(email);
+
+            if (user != null)
+            {
+                string pathRoot = Environment.CurrentDirectory;
+                var filePath = Path.Combine(pathRoot, "Templates", "RequestConfirmChangePassword.html");
+                string template = File.ReadAllText(filePath);
+
+                var notification = new CreateNotificationViewModel
+                {
+                    To = user.Email,
+                    Subject = "Contraseña restablecida",
+                    IsBodyHtml = true,
+                    BobyMessage = UserGeneratorFunction.GetHtml(template.Replace("\r", "").Replace("\n", ""), null)
+                };
+
+                await _notificationService.CreateNotification(user.Id, notification);
+
+                return new ResponseModel(true, data: null);
+            }
+
+            return new ResponseModel(false, "No se encontró el registro de usuario.");
+        }
+
+        public async Task<ResponseModel> ResetPassword(ResetPasswordViewModel data)
+        {
+            var user = await _usersManager.FindByEmailAsync(data.Email);
+
+            if (user != null)
+            {
+                var result = await _usersManager.ResetPasswordAsync(user, data.Token, data.Password);
+
+                if (result.Succeeded)
+                {
+                    return new ResponseModel(true, data: null);
+                }
+                else
+                {
+                    return new ResponseModel(false, JsonConvert.SerializeObject(result.Errors));
+                }
+            }
+
+            return new ResponseModel(false, "La sesión ha expirado.");
         }
     }
 }

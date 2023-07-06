@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alender.User.Domain.ViewModels;
+using System;
 using System.Threading.Tasks;
 using Valtegy.Domain.Entities;
 using Valtegy.Domain.Models;
@@ -14,5 +15,8 @@ namespace Valtegy.Domain.Services
         ResponseModel ValidateEmailCode(RequestValidateEmailCodeViewModel data);
         ResponseModel DeleteUser(Guid userId);
         Task<ResponseModel> CompleteAccount(string email, CompleteAccountViewModel user);
+        Task<ResponseModel> ForgotPassword(string email);
+        Task<ResponseModel> ResetPassword(ResetPasswordViewModel data);
+        Task<ResponseModel> RequestForgotPassword(string email);
     }
 }
